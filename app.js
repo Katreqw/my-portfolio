@@ -27,15 +27,15 @@ const fields = [
 { key: ';labs_done';, label: ';✅ Labs&#39;},
 { key: ';platform';, label: ';☁️ Platform&#39;},
 ];
-const skillsHtml = (data.skills || []).map(s =>; `<;span class=&quot;api-
-tag&quot;>;${s}<;/span>;`).join(';';);
+const skillsHtml = (data.skills || []).map(s =>; `<;span class=";api-
+tag";>;${s}<;/span>;`).join(';';);
 let html = fields.map(f =>; `
-<;div class=&quot;info-row&quot;>;
-<;span class=&quot;label&quot;>;${f.label}<;/span>;
-<;span class=&quot;value&quot;>;${data[f.key]}<;/span>;
+<;div class=";info-row";>;
+<;span class=";label";>;${f.label}<;/span>;
+<;span class=";value";>;${data[f.key]}<;/span>;
 <;/div>;`).join(';';);
-html += `<;div class=&quot;info-row&quot;>;<;span class=&quot;label&quot;>;�� Skills<;/span>;&lt;di
-class=&quot;skills-tags&quot;>;${skillsHtml}<;/div>;<;/div>;`;
-html += `<;p class=&quot;api-timestamp&quot;>;� Оновлено: ${data.deployed_at}<;/p>;`;
+html += `<;div class=";info-row";>;<;span class=";label";>;�� Skills<;/span>;&lt;di
+class=";skills-tags";>;${skillsHtml}<;/div>;<;/div>;`;
+html += `<;p class=";api-timestamp";>;� Оновлено: ${data.deployed_at}<;/p>;`;
 container.innerHTML = html;
 }
