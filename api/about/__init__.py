@@ -9,8 +9,8 @@ from datetime import datetime
 def main(req: func.HttpRequest) -> func.HttpResponse:
     # ── ВАШІ ДАНІ: замініть на свої ────────────────────────────
     student_data = {
-        'name':       'Іванов Іван Іванович',
-        'email':      'ivanov@stud.university.edu.ua',
+        'name':       'Панов Володимир Михайлович',
+        'email':      'panov.volodimir@stud.onu.edu.ua',
         'specialty':  'Комп\'ютерна інженерія (Магістр, 1 курс)',
         'skills':     ['Python', 'Azure', 'GitHub', 'Linux', 'SQL'],
         'labs_done':  2,
